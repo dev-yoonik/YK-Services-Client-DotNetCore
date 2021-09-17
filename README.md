@@ -1,1 +1,1 @@
-# YK-ServicesClient-DotNetCore
+# YooniK-Services-Client-DotNetCore
