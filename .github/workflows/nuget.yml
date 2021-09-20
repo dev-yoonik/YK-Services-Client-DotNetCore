@@ -2,8 +2,10 @@ name: "Deploy to NuGet"
 
 on:
   push:
+    branches:
+     - main 
     tags:
-     - 'v*'
+     - v*
 
 env:
   PROJECT_PATH: 'YooniK.Services/YooniK.Services.Client/YooniK.Services.Client.csproj'
