@@ -33,7 +33,8 @@ jobs:
 
      - name: 'Get version'
        id: version
-       uses: battila7/get-version-action@v2
+       uses: battila7/get-version-action@v2.1.0
+       
 
      - name: 'Pack project'
        run: dotnet pack ${{ env.PROJECT_PATH }} --no-build --no-restore --configuration Release --include-symbols -p:PackageVersion=${{ steps.version.outputs.version-without-v }} --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
