@@ -9,7 +9,7 @@ on:
 
 env:
   PROJECT_PATH: 'YooniK.Services/YooniK.Services.Client/YooniK.Services.Client.csproj'
-  PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}\output
+  PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}/output
   NUGET_SOURCE_URL:  'https://api.nuget.org/v3/index.json'
 
 jobs:
