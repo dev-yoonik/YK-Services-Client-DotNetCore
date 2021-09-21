@@ -11,20 +11,36 @@
     <Description>Handles sending the YooniK DotNet Sdks HTTP Requests and returning its response.</Description>
     <PackageIcon>YooniK-logo.png</PackageIcon>
     <PackageIconUrl />
-    <PackageLicenseFile>LICENSE.txt.txt</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <RepositoryUrl>https://github.com/dev-yoonik/YK-Services-Client-DotNetCore</RepositoryUrl>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>YooniK;Client;Services;</PackageTags>
+    <Version>0.0.1</Version>
+	<Deterministic>true</Deterministic>
+	<!-- Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->
+	<PublishRepositoryUrl>true</PublishRepositoryUrl>
+	<!-- Embed source files that are not tracked by the source control manager in the PDB -->
+	<EmbedUntrackedSources>true</EmbedUntrackedSources>
+	<!-- Build symbol package (.snupkg) to distribute the PDB containing Source Link -->
+	<IncludeSymbols>true</IncludeSymbols>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+	<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.0-beta-20204-02">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Polly" Version="7.2.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\LICENSE.txt.txt">
+    <None Include="..\..\LICENSE.md">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
