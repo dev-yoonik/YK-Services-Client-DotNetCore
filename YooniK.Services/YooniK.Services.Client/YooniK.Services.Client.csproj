@@ -27,7 +27,6 @@
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
 	<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-	<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
