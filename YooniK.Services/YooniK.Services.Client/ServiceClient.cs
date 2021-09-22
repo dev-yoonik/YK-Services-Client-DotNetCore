@@ -138,7 +138,7 @@ namespace YooniK.Services.Client
         /// <typeparam name="T"> Identifies object type of the JSON deserialization. </typeparam>
         /// <param name="requestMessage"> Request Message Information. </param>
         /// <returns> HTTP Response Content in T (type) object. </returns>
-        public async Task<T> RequestAsync<T>(IRequestMessage requestMessage)
+        public async Task<T> SendRequestAsync<T>(IRequestMessage requestMessage)
         {
             return JsonConvert.DeserializeObject<T>(await RequestHandlerAsync(requestMessage));
         }
@@ -149,7 +149,7 @@ namespace YooniK.Services.Client
         /// </summary>
         /// <param name="requestMessage"> Request Message Information. </param>
         /// <returns> JSON string of the HTTP Response Content </returns>
-        public async Task<string> RequestAsync(IRequestMessage requestMessage)
+        public async Task<string> SendRequestAsync(IRequestMessage requestMessage)
         {
             return await RequestHandlerAsync(requestMessage);
         }

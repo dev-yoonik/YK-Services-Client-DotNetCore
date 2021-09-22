@@ -5,7 +5,7 @@ namespace YooniK.Services.Client
 {
     public interface IServiceClient
     {
-        public Task<T> RequestAsync<T>(IRequestMessage Message);
-        public Task<string> RequestAsync(IRequestMessage Message);
+        public Task<T> SendRequestAsync<T>(IRequestMessage Message);
+        public Task<string> SendRequestAsync(IRequestMessage Message);
     }
 }
