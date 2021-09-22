@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
-## [0.0.4] - 2021-09-21
+## [1.0.0] - 2021-09-21
 
 ### Added
 
@@ -15,11 +15,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - SendRequestAsync method for type string return
 - SendRequestAsync method for custom deserializable type
 - (Polly)cies for retry and circuit breaker
-
-### Changed
-
-- RequestAsync name to SendRequestAsync
-
-### Fixed
-
--   Utils.GetRequestUri baseUri argument when null it throws exception

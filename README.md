@@ -26,14 +26,14 @@ Use it:
 ```csharp
 
 // Example data
-string faceApiBaseUrl = "http://127.0.0.1:5001/v1.1/yoonik/";
-string faceApiSubscriptionKey = "7390ef95-770b-485d-a30c-3fa2ab66f131";
+string apiBaseUrl = "YOUR-API-ENDPOINT";
+string apiSubscriptionKey = "YOUR-X-API-KEY-ENDPOINT";
 
 // instantiate an IConnectionInformation with the above information
-IConnectionInformation faceApiConnectionInformation = new ConnectionInformation(faceApiBaseUrl, faceApiSubscriptionKey);
+IConnectionInformation apiConnectionInformation = new ConnectionInformation(apiBaseUrl, apiSubscriptionKey);
 
 // instantiate an IServiceClient and pass the IConnectionInformation
-IServiceClient faceClient = new ServiceClient(faceApiConnectionInformation);
+IServiceClient apiClient = new ServiceClient(apiConnectionInformation);
 
 /* 
     To use the Request methods its needed an IRequestMessage instantiated object.
@@ -43,9 +43,9 @@ IServiceClient faceClient = new ServiceClient(faceApiConnectionInformation);
 IRequestMessage requestMessage = new RequestMessage(System.Net.Http.HttpMethod.Get);
 
 // !!! NOTE Response Content in string, use the following
-await faceClient.RequestAsync(requestMessage);
+await apiClient.RequestAsync(requestMessage);
 
 // Response Content in an deserializable object use
-await faceClient.RequestAsync<DeserializableObjectType>(requestMessage);
+await apiClient.RequestAsync<DeserializableObjectType>(requestMessage);
 
 ```
