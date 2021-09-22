@@ -80,7 +80,7 @@ namespace YooniK.Services.Client
         /// </summary>
         /// <param name="message"> Request Message Information. </param>
         /// <returns> HTTP Response Message Content in string. </returns>
-        private async Task<string> RequestHandlerAsync(IRequestMessage message)
+        private async Task<string> SendRequestHandlerAsync(IRequestMessage message)
         {
             try
             {
@@ -140,7 +140,7 @@ namespace YooniK.Services.Client
         /// <returns> HTTP Response Content in T (type) object. </returns>
         public async Task<T> SendRequestAsync<T>(IRequestMessage requestMessage)
         {
-            return JsonConvert.DeserializeObject<T>(await RequestHandlerAsync(requestMessage));
+            return JsonConvert.DeserializeObject<T>(await SendRequestHandlerAsync(requestMessage));
         }
 
         
@@ -151,7 +151,7 @@ namespace YooniK.Services.Client
         /// <returns> JSON string of the HTTP Response Content </returns>
         public async Task<string> SendRequestAsync(IRequestMessage requestMessage)
         {
-            return await RequestHandlerAsync(requestMessage);
+            return await SendRequestHandlerAsync(requestMessage);
         }
     }
 }
