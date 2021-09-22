@@ -19,6 +19,8 @@ For other installation methods, see [YooniK Services Client Nuget](https://www.n
 PM> Install-Package YooniK.Services.Client
 ```
 
+## Example
+
 Use it:
 
 ```csharp
