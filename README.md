@@ -40,10 +40,10 @@ IServiceClient faceClient = new ServiceClient(faceApiConnectionInformation);
 */
 IRequestMessage requestMessage = new RequestMessage(System.Net.Http.HttpMethod.Get);
 
-// !!! NOTE Reponse Content in string, use the following
+// !!! NOTE Response Content in string, use the following
 await faceClient.RequestAsync(requestMessage);
 
-// Reponse Content in an deserializable object use
+// Response Content in an deserializable object use
 await faceClient.RequestAsync<DeserializableObjectType>(requestMessage);
 
 ```
