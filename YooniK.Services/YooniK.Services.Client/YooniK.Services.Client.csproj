@@ -16,7 +16,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageTags>YooniK;Client;Services;</PackageTags>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
 	<Deterministic>true</Deterministic>
 	<!-- Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->
 	<PublishRepositoryUrl>true</PublishRepositoryUrl>
@@ -44,7 +44,7 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-    <None Include="..\..\YooniK-logo.png">
+    <None Include="..\..\.github\YooniK-logo.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
