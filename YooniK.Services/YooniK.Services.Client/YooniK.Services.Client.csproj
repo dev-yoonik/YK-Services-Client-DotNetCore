@@ -8,7 +8,7 @@
     <Authors>YooniK</Authors>
     <Copyright>YooniK-Authentication and Privacy Systems, SA</Copyright>
     <PackageProjectUrl>https://www.yoonik.me</PackageProjectUrl>
-    <Description>Handles sending the YooniK DotNet Sdks HTTP Requests and returning its response.</Description>
+    <Description>An easy communication handler for the YooniK APIs SDKs. </Description>
     <PackageIcon>YooniK-logo.png</PackageIcon>
     <PackageIconUrl />
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>

@@ -20,27 +20,23 @@ jobs:
      - name: 'Checkout'
        uses: actions/checkout@v2
 
-     - name: 'Install dotnet'
+     - name: 'Installing dotnet'
        uses: actions/setup-dotnet@v1
        with:
         dotnet-version: '5.0.x'
 
-     - name: 'Restore packages'
-       run: dotnet restore ${{ env.PROJECT_PATH }}
-
-     - name: 'Build project'
-       run: dotnet build ${{ env.PROJECT_PATH }} --no-restore --configuration Release
-
      - name: 'Get version'
        id: version
        uses: battila7/get-version-action@v2.1.0
-       
 
-     - name: 'Pack project'
+     - name: 'Restoring packages'
+       run: dotnet restore ${{ env.PROJECT_PATH }}
+
+     - name: 'Building project'
+       run: dotnet build ${{ env.PROJECT_PATH }} --no-restore --configuration Release
+
+     - name: 'Packing project'
        run: dotnet pack ${{ env.PROJECT_PATH }} --no-build --no-restore --configuration Release --include-symbols -p:PackageVersion=${{ steps.version.outputs.version-without-v }} --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
 
-     - name: 'Push release package'
+     - name: 'Pushing package'
        run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}\*.nupkg -s ${{ env.NUGET_SOURCE_URL }} -k ${{ secrets.NUGET_AUTH_TOKEN }}
-       
-     - name: 'Push debug package'
-       run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}\*.snupkg -s ${{ env.NUGET_SOURCE_URL }} -k ${{ secrets.NUGET_AUTH_TOKEN }}

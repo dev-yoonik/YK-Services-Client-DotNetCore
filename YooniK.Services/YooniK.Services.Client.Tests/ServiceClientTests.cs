@@ -1,9 +1,5 @@
 ﻿using NUnit.Framework;
-using Moq;
 using System;
-using System.Threading.Tasks;
-using System.Net.Http;
-using System.Net;
 using YooniK.Services.Client.Common;
 
 namespace YooniK.Services.Client.Tests
