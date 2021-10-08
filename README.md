@@ -33,7 +33,7 @@ string apiSubscriptionKey = "YOUR-X-API-KEY-ENDPOINT";
 var apiConnectionInformation = new ConnectionInformation(apiBaseUrl, apiSubscriptionKey);
 
 // instantiate an IServiceClient and pass the IConnectionInformation
-IServiceClient apiClient = new ServiceClient(apiConnectionInformation);
+var apiClient = new ServiceClient(apiConnectionInformation);
 
 /* 
     To use the Request methods its needed an IRequestMessage instantiated object.
