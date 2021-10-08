@@ -8,7 +8,7 @@
     <Authors>YooniK</Authors>
     <Copyright>YooniK-Authentication and Privacy Systems, SA</Copyright>
     <PackageProjectUrl>https://www.yoonik.me</PackageProjectUrl>
-    <Description>An easy communication handler for the YooniK APIs SDKs. </Description>
+    <Description>An easy to use communication handler for the YooniK APIs SDKs. </Description>
     <PackageIcon>YooniK-logo.png</PackageIcon>
     <PackageIconUrl />
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -36,7 +36,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="Polly" Version="7.2.2" />
   </ItemGroup>
 
   <ItemGroup>
