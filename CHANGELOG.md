@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [1.0.1] - 2021-10-08
+
+### Changed
+
+- Removed retry and circuit breaker (Polly)cies
+
 ## [1.0.0] - 2021-09-22
 
 ### Added
