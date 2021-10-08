@@ -30,7 +30,7 @@ string apiBaseUrl = "YOUR-API-ENDPOINT";
 string apiSubscriptionKey = "YOUR-X-API-KEY-ENDPOINT";
 
 // instantiate an IConnectionInformation with the above information
-IConnectionInformation apiConnectionInformation = new ConnectionInformation(apiBaseUrl, apiSubscriptionKey);
+var apiConnectionInformation = new ConnectionInformation(apiBaseUrl, apiSubscriptionKey);
 
 // instantiate an IServiceClient and pass the IConnectionInformation
 IServiceClient apiClient = new ServiceClient(apiConnectionInformation);
@@ -40,7 +40,7 @@ IServiceClient apiClient = new ServiceClient(apiConnectionInformation);
     Its required to specified the HttpMethod parameter.
     This allows for a custom HTTP request creation, from custom headers, query string, URL relative path, and an IRequest object.  
 */
-IRequestMessage requestMessage = new RequestMessage(System.Net.Http.HttpMethod.Get);
+var requestMessage = new RequestMessage(System.Net.Http.HttpMethod.Get);
 
 // !!! NOTE Response Content in string, use the following
 await apiClient.RequestAsync(requestMessage);
