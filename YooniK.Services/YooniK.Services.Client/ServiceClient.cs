@@ -1,7 +1,4 @@
 ﻿using Newtonsoft.Json;
-using Polly;
-using Polly.CircuitBreaker;
-using Polly.Retry;
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
