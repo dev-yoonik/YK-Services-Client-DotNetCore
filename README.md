@@ -3,7 +3,7 @@
 
 # YooniK Services Client DotNet SDK
 
-![Nuget](https://img.shields.io/nuget/v/YooniK.Services.Client)
+[![Nuget](https://img.shields.io/nuget/v/YooniK.Services.Client)](https://www.nuget.org/packages/YooniK.Services.Client/)
 [![License](https://img.shields.io/pypi/l/yk_face.svg)](https://github.com/dev-yoonik/YK-Services-Client-DotNetCore/blob/master/LICENSE)
 
 This repository contains the Services Client for an easier communication experience when using YooniK APIs SDKs, an [YooniK Services](https://yoonik.me) offering.
