@@ -1,12 +1,12 @@
 
-![https://yoonik.me/wp-content/uploads/2019/08/cropped-LogoV4_TRANSPARENT.png](https://yoonik.me/wp-content/uploads/2019/08/cropped-LogoV4_TRANSPARENT.png)
+![https://yk-website-images.s3.eu-west-1.amazonaws.com/LogoV4_TRANSPARENT.png](https://yk-website-images.s3.eu-west-1.amazonaws.com/LogoV4_TRANSPARENT.png)
 
 # YooniK Services Client DotNet SDK
 
 [![Nuget](https://img.shields.io/nuget/v/YooniK.Services.Client)](https://www.nuget.org/packages/YooniK.Services.Client/)
 [![License](https://img.shields.io/pypi/l/yk_face.svg)](https://github.com/dev-yoonik/YK-Services-Client-DotNetCore/blob/master/LICENSE)
 
-This repository contains the Services Client for an easier communication experience when using YooniK APIs SDKs, an [YooniK Services](https://yoonik.me) offering.
+This repository contains the Services Client for an easier communication experience when using YooniK APIs SDKs, an [YooniK Services](https://www.yoonik.me) offering.
 
 For more information please [contact us](mailto:info@yoonik.me).
 
